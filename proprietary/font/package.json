@@ -1,0 +1,23 @@
+{
+  "name": "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/font",
+  "version": "1.0.0-alpha.0",
+  "author": "Community for NL Design System",
+  "description": "Font assets",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "main": "dist/index.css",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git+https",
+    "url": "https://github.com/MinBZK/NL-design-system.git",
+    "directory": "proprietary/font"
+  }
+}

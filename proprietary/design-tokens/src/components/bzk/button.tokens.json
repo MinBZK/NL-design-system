@@ -1,0 +1,8 @@
+{
+  "bzk": {
+    "button": {
+      "background-color": { "value": "{bzk.color.blue.50}" },
+      "color": { "value": "{bzk.color.grey.100}" }
+    }
+  }
+}

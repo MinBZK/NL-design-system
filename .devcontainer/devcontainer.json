@@ -1,0 +1,38 @@
+{
+  "name": "Project Dev",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "containerEnv": {
+    "DEVCONTAINER": "1"
+  },
+  "remoteUser": "root",
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "streetsidesoftware.code-spell-checker",
+        "redhat.vscode-yaml",
+        "github.vscode-github-actions",
+        "mhutchie.git-graph",
+        "ms-vsliveshare.vsliveshare"
+      ],
+      "settings": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.renderWhitespace": "boundary",
+        "files.trimTrailingWhitespace": true,
+        "terminal.integrated.inheritEnv": true,
+        "debug.toolBarLocation": "commandCenter",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/usr/bin/zsh"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "remote.autoForwardPorts": false,
+        "remote.restoreForwardedPorts": false
+      }
+    }
+  }
+}
