@@ -1,0 +1,88 @@
+// .rvo-layout-grid-container {
+//   container-type: inline-size;
+// }
+
+.rvo-layout-grid {
+  display: grid;
+}
+
+.rvo-layout-grid-columns--one {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 552px) {
+  .rvo-layout-grid-columns--two,
+  .rvo-layout-grid-columns--three,
+  .rvo-layout-grid-columns--four,
+  .rvo-layout-grid-columns--five,
+  .rvo-layout-grid-columns--six {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 828px) {
+  .rvo-layout-grid-columns--three,
+  .rvo-layout-grid-columns--six,
+  .rvo-layout-grid-columns--five {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rvo-layout-grid-columns--two.rvo-layout-grid-layout--2fr1fr {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 1104px) {
+  .rvo-layout-grid-columns--four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1380px) {
+  .rvo-layout-grid-columns--five {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1656px) {
+  .rvo-layout-grid-columns--six {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+// Container queries not break build because of outdated Docusaurus (2 has to be 3)
+// @container (min-width: 552px) {
+//   .rvo-layout-grid-columns--two,
+//   .rvo-layout-grid-columns--three,
+//   .rvo-layout-grid-columns--four,
+//   .rvo-layout-grid-columns--five,
+//   .rvo-layout-grid-columns--six {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// @container (min-width: 828px) {
+//   .rvo-layout-grid-columns--three,
+//   .rvo-layout-grid-columns--six,
+//   .rvo-layout-grid-columns--five {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+
+// @container (min-width: 1104px) {
+//   .rvo-layout-grid-columns--four {
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+// }
+
+// @container (min-width: 1380px) {
+//   .rvo-layout-grid-columns--five {
+//     grid-template-columns: repeat(5, 1fr);
+//   }
+// }
+
+// @container (min-width: 1656px) {
+//   .rvo-layout-grid-columns--six {
+//     grid-template-columns: repeat(6, 1fr);
+//   }
+// }

@@ -1,11 +1,12 @@
 {
-  "name": "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/design-tokens",
+  "name": "@nl-bzk/design-tokens",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
   "description": "Example design tokens",
   "license": "SEE LICENSE IN LICENSE.md",
   "keywords": [
-    "nl-design-system"
+    "nl-design-system",
+    "bzk"
   ],
   "private": false,
   "publishConfig": {

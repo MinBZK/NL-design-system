@@ -1,0 +1,26 @@
+{
+  "rvo": {
+    "layout": {
+      "max-width": {
+        "sm": {
+          "css": {
+            "syntax": "<length>",
+            "inherits": true
+          }
+        },
+        "md": {
+          "css": {
+            "syntax": "<length>",
+            "inherits": true
+          }
+        },
+        "lg": {
+          "css": {
+            "syntax": "<length>",
+            "inherits": true
+          }
+        }
+      }
+    }
+  }
+}

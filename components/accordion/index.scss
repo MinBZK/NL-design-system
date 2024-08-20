@@ -1,0 +1,21 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021 Community for NL Design System
+ */
+
+.rvo-accordion .rvo-accordion__item[open] {
+  border-left-color: var(--rvo-accordion-border-color);
+}
+
+.rvo-accordion .rvo-accordion__item {
+  border-bottom-color: var(--rvo-accordion-border-color);
+  border-left: 6px solid transparent;
+}
+
+.rvo-accordion--grijs .rvo-accordion__item {
+  background-color: var(--rvo-accordion-grijs-background-color);
+}
+
+.rvo-accordion .rvo-accordion__item:first-child {
+  border-top: 1px solid var(--rvo-accordion-border-color);
+}

@@ -1,41 +1,72 @@
 {
-  "name": "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/web-components-react",
-  "version": "1.0.0-alpha.0",
+  "version": "1.3.0",
   "author": "Community for NL Design System",
-  "description": "React web components bundle based on the NL Design System architecture",
+  "description": "Component library bundle for the MinBZK based on the NL Design System architecture and on the Municipality of Utrecht",
   "license": "EUPL-1.2",
+  "name": "@nl-bzk/web-components-react",
   "keywords": [
-    "nl-design-system"
+    "nl-design-system",
+    "bzk"
   ],
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
-    "type": "git+https",
-    "url": "https://github.com/MinBZK/NL-design-system.git",
+    "type": "git+ssh",
+    "url": "git@github.com:MinBZK/NL-design-system.git",
     "directory": "packages/web-components-react"
   },
   "sideEffects": false,
   "scripts": {
-    "build": "tsc -p .",
-    "clean": "rimraf dist/ src/components.ts src/react-component-lib/"
+    "build": "pnpm run '/^build:.*/'",
+    "build:web-components": "rollup -c",
+    "clean": "rimraf dist/"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist/"
   ],
-  "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+  "dependencies": {
+    "@utrecht/web-component-library-stencil": "workspace:*"
   },
   "devDependencies": {
-    "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/web-components-stencil": "workspace:*",
-    "@types/node": "22.4.1",
+    "@babel/core": "7.24.7",
+    "@babel/plugin-transform-runtime": "7.24.7",
+    "@babel/preset-env": "7.24.7",
+    "@babel/preset-react": "7.24.7",
+    "@babel/runtime": "7.24.7",
+    "@rollup/plugin-babel": "6.0.4",
+    "@rollup/plugin-commonjs": "26.0.1",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@types/node": "20.14.8",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "rimraf": "6.0.1",
-    "typescript": "5.5.4"
+    "rimraf": "5.0.7",
+    "rollup": "4.18.0",
+    "rollup-plugin-delete": "2.0.0",
+    "rollup-plugin-filesize": "10.0.0",
+    "rollup-plugin-node-externals": "7.1.2",
+    "rollup-plugin-node-polyfills": "0.2.1",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-typescript2": "0.36.0",
+    "tslib": "2.6.2",
+    "typescript": "4.9.5"
+  },
+  "peerDependencies": {
+    "react": "16 - 18",
+    "react-dom": "16 - 18"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "setupTestFrameworkScriptFile": "<rootDir>/jest.setup.js",
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "dist"
+    ]
   }
 }

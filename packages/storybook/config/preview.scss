@@ -1,0 +1,16 @@
+html,
+body {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+}
+
+.rvo-theme {
+  background-color: var(--utrecht-document-background-color);
+  color: var(--utrecht-document-color);
+  font-family: var(--utrecht-document-font-family);
+  font-size: var(--utrecht-document-font-size);
+  font-weight: var(--utrecht-document-font-weight);
+  line-height: var(--utrecht-document-line-height);
+}

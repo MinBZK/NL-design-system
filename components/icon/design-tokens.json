@@ -1,0 +1,34 @@
+{
+  "rvo": {
+    "icon": {
+      "sm": {
+        "height": {
+          "css": {
+            "syntax": "<length>",
+            "inherits": true
+          }
+        },
+        "width": {
+          "css": {
+            "syntax": "<length>",
+            "inherits": true
+          }
+        }
+      },
+      "md": {
+        "height": {
+          "css": {
+            "syntax": "<length>",
+            "inherits": true
+          }
+        },
+        "width": {
+          "css": {
+            "syntax": "<length>",
+            "inherits": true
+          }
+        }
+      }
+    }
+  }
+}

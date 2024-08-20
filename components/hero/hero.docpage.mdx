@@ -1,0 +1,24 @@
+import { Canvas, Controls, Meta, Title } from "@storybook/blocks";
+import documentation from "./CHANGELOG.md";
+import changeLog from "./CHANGELOG.md";
+import * as HeroStories from "./hero.stories";
+import { Changelog, Readme } from "../../packages/storybook/config/storybook-blocks";
+
+<Meta of={HeroStories} name="Documentatie" />
+
+<Title />
+
+<Canvas of={HeroStories.Default} layout="padded" />
+<Controls />
+
+## Documentatie
+
+<Readme markdown={documentation} />
+
+## Changelog
+
+<Changelog markdown={changeLog} />
+
+## Dependencies
+
+_@nl-rvo/assets/images_

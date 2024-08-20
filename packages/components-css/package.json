@@ -1,16 +1,33 @@
 {
-  "name": "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/components-css",
+  "name": "@nl-bzk/component-library-css",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
-  "description": "CSS Components for a design system based on the NL Design System architecture",
+  "description": "CSS components for the MinBZK design system based on the NL Design System architecture and on the components of RVO EZK",
   "license": "EUPL-1.2",
   "keywords": [
-    "nl-design-system"
+    "nl-design-system",
+    "minbzk"
   ],
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
-    "type": "git+https",
-    "url": "https://github.com/MinBZK/NL-design-system.git",
+    "type": "git+ssh",
+    "url": "git@github.com:MinBZK/NL-design-system.git",
     "directory": "packages/components-css"
-  }
+  },
+  "devDependencies": {
+    "@nl-minbzk/design-tokens": "workspace:*",
+    "@utrecht/component-library-css": "3.0.1-alpha.22",
+    "node-sass-package-importer": "5.3.3",
+    "rimraf": "5.0.5",
+    "sass": "1.71.1"
+  },
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "sass src/:dist/ --load-path=./node_modules/ --load-path=../../node_modules/ --no-source-map --style=compressed",
+    "clean": "rimraf dist/"
+  },
+  "main": "dist/index.css"
 }
