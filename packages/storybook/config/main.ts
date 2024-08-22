@@ -1,7 +1,7 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
-  stories: ['../src/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
+  stories: ['../src/**/*.mdx'],
   addons: [
     '@storybook/addon-a11y',
     '@storybook/addon-docs',
@@ -20,7 +20,24 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
-  staticDirs: ['../../../proprietary/assets/src'],
+  staticDirs: ['../../../proprietary/design-tokens/src'],
+  refs: {
+    'nl-rvo-design-system': {
+      title: 'RVO Design System',
+      url: 'https://nl-design-system.github.io/rvo/',
+      expanded: false,
+    },
+    'utrecht-design-system': {
+      title: 'Utrecht Design System',
+      url: 'https://nl-design-system.github.io/utrecht/storybook/',
+      expanded: false,
+    },
+    'rijkshuisstijl-community-design-system': {
+      title: 'Rijkshuisstijl Design System',
+      url: 'https://rijkshuisstijl-community.vercel.app/',
+      expanded: false,
+    },
+  },
 };
 
 export default config;

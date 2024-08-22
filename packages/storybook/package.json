@@ -1,11 +1,12 @@
 {
-  "name": "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/storybook",
+  "name": "@nl-minbzk/storybook",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
-  "description": "Storybook based on the NL Design System architecture",
+  "description": "Storybook of MinBZK based on the NL Design System architecture",
   "license": "EUPL-1.2",
   "keywords": [
-    "nl-design-system"
+    "nl-design-system",
+    "minbzk"
   ],
   "private": true,
   "repository": {
@@ -22,12 +23,7 @@
   "devDependencies": {
     "@babel/core": "7.25.2",
     "@etchteam/storybook-addon-status": "5.0.0",
-    "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/assets": "workspace:*",
-    "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/components-css": "workspace:*",
     "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/design-tokens": "workspace:*",
-    "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/font": "workspace:*",
-    "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/web-components-react": "workspace:*",
-    "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/web-components-stencil": "workspace:*",
     "@storybook/addon-a11y": "8.2.9",
     "@storybook/addon-actions": "8.2.9",
     "@storybook/addon-docs": "8.2.9",

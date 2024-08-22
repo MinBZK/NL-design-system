@@ -2,6 +2,8 @@
 
 # NL Design System introductie
 
+Het NL Design System van MinBZK is voornamelijk een verzameling van al bestaande Design systems, zo zijn deze ook include in de uitklapbare vormen hier beneden, deze Design Systems zijn van [**Gemeente Utrecht**](https://github.com/nl-design-system/utrecht), [**RVO van MinEZK**](https://github.com/nl-design-system/rvo), en [**Rijkshuisstijl Community**](https://github.com/nl-design-system/rijkshuisstijl-community****).
+
 De Digitale Overheid stelt dat overheidsdienstverlening toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor zijn consistent ontworpen diensten en websites nodig.
 Daarom gaan we tussen overheidsorganisaties principes, interactiepatronen en code delen via een gezamenlijk design system. Dit NL Design System draagt niet alleen bij aan gebruiksvriendelijkere diensten van een betere kwaliteit en toegankelijkheid. Het helpt ook dubbel werk te voorkomen.
 
