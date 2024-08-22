@@ -18,8 +18,6 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "build": "npm-run-all clean build:**",
-    "build:style-dictionary": "style-dictionary build --config ./style-dictionary.config.json",
     "watch": "npm-run-all watch:**",
     "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'pnpm run build' 'src/**/*.tokens.json'"
   },
