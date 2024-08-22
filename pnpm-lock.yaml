@@ -11,6 +11,9 @@ importers:
       http-server:
         specifier: 14.1.1
         version: 14.1.1
+      npm-package-json-lint-config-default:
+        specifier: 7.0.1
+        version: 7.0.1(npm-package-json-lint@8.0.0(typescript@5.5.4))
     devDependencies:
       '@lerna-lite/cli':
         specifier: 3.8.0
@@ -96,7 +99,7 @@ importers:
       '@etchteam/storybook-addon-status':
         specifier: 5.0.0
         version: 5.0.0
-      '@ministerievanbinnenlandsezakenenkoninkrijksrelaties/design-tokens':
+      '@nl-minbzk/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/design-tokens
       '@storybook/addon-a11y':
@@ -4529,6 +4532,12 @@ packages:
   npm-package-arg@11.0.3:
     resolution: {integrity: sha512-sHGJy8sOC1YraBywpzQlIKBE4pBbGbiF95U6Auspzyem956E0+FtDtsx1ZxlOJkQCZ1AFXAY/yuvtFYrOxF+Bw==}
     engines: {node: ^16.14.0 || >=18.0.0}
+
+  npm-package-json-lint-config-default@7.0.1:
+    resolution: {integrity: sha512-UMdVX/iowvA5qGeEgHsTHXMGgamdGR1pOSuzMDzQntZ/+mq8z9S9t1qr7rRdxKH3kNx6I3fuct1ECbmCz8u2ow==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
+    peerDependencies:
+      npm-package-json-lint: ^8.0.0
 
   npm-package-json-lint@8.0.0:
     resolution: {integrity: sha512-44xqAKoV0nXnBYYLGUhMItGZb5tW3cLoW3UZxcsaCOX/YAkECrzOQA5F48oAA51vVE5CqAnsJB2CFvtolzMA3Q==}
@@ -11684,6 +11693,10 @@ snapshots:
       proc-log: 4.2.0
       semver: 7.6.3
       validate-npm-package-name: 5.0.1
+
+  npm-package-json-lint-config-default@7.0.1(npm-package-json-lint@8.0.0(typescript@5.5.4)):
+    dependencies:
+      npm-package-json-lint: 8.0.0(typescript@5.5.4)
 
   npm-package-json-lint@8.0.0(typescript@5.5.4):
     dependencies:

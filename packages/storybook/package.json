@@ -23,7 +23,7 @@
   "devDependencies": {
     "@babel/core": "7.25.2",
     "@etchteam/storybook-addon-status": "5.0.0",
-    "@ministerievanbinnenlandsezakenenkoninkrijksrelaties/design-tokens": "workspace:*",
+    "@nl-minbzk/design-tokens": "workspace:*",
     "@storybook/addon-a11y": "8.2.9",
     "@storybook/addon-actions": "8.2.9",
     "@storybook/addon-docs": "8.2.9",

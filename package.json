@@ -1,5 +1,5 @@
 {
-  "name": "@ministerievanbinnenlandsezakenenkoninkrijksrelatie/design-system",
+  "name": "@nl-minbzk/design-system",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
   "description": "Design system based on the NL Design System architecture",
@@ -51,11 +51,11 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna run clean",
-    "lint": "npm-run-all --continue-on-error lint:** lint-workspaces",
+    "lint": "npm-run-all lint:** lint-workspaces",
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
-    "lint:js": "eslint --ext .js,.cjs,.mjs,.json,.jsx,.mdx,.ts,.tsx --report-unused-disable-directives .",
+    "lint:js": "eslint --report-unused-disable-directives .",
     "lint:md": "markdownlint '**/*.md'",
-    "lint:package-json": "npmPkgJsonLint .",
+    "lint:package-json": "npmPkgJsonLint . -c",
     "lint:package-lock": "pnpm ls --recursive",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
@@ -78,8 +78,6 @@
     "watch:storybook": "lerna run build:stencil && lerna run build:style-dictionary && pnpm --filter ./packages/storybook run storybook",
     "watch:style-dictionary": "lerna run watch:style-dictionary"
   },
-  "dependencies": {
-    "http-server": "14.1.1"
-  },
+  "dependencies": {},
   "packageManager": "pnpm@9.6.0"
 }
