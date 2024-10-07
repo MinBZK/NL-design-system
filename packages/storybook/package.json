@@ -21,26 +21,26 @@
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
   "devDependencies": {
-    "@babel/core": "7.25.2",
+    "@babel/core": "7.25.7",
     "@etchteam/storybook-addon-status": "5.0.0",
     "@nl-minbzk/design-tokens": "workspace:*",
-    "@storybook/addon-a11y": "8.3.2",
-    "@storybook/addon-actions": "8.3.2",
-    "@storybook/addon-docs": "8.3.2",
-    "@storybook/addon-interactions": "8.3.2",
-    "@storybook/addon-links": "8.3.2",
-    "@storybook/addon-viewport": "8.3.2",
-    "@storybook/react": "8.3.2",
-    "@storybook/react-vite": "8.3.2",
-    "@types/react": "18.3.8",
+    "@storybook/addon-a11y": "8.3.5",
+    "@storybook/addon-actions": "8.3.5",
+    "@storybook/addon-docs": "8.3.5",
+    "@storybook/addon-interactions": "8.3.5",
+    "@storybook/addon-links": "8.3.5",
+    "@storybook/addon-viewport": "8.3.5",
+    "@storybook/react": "8.3.5",
+    "@storybook/react-vite": "8.3.5",
+    "@types/react": "18.3.11",
     "@types/react-dom": "18.3.0",
     "@whitespace/storybook-addon-html": "6.1.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-syntax-highlighter": "15.5.0",
     "rimraf": "6.0.1",
-    "storybook": "8.3.2",
+    "storybook": "8.3.5",
     "typescript": "5.6.2",
-    "vite": "5.4.7"
+    "vite": "5.4.8"
   }
 }
